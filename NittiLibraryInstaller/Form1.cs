@@ -11,6 +11,7 @@ namespace NittiLibraryInstaller
     public partial class Form1 : Form
     {
         private Dictionary<string, string> libraries;
+        private Dictionary<string, string> libraryDescriptions;
 
         public Form1()
         {
@@ -41,6 +42,32 @@ namespace NittiLibraryInstaller
                 { "OpenAL", "https://huggingface.co/spaces/Nicolhetti/Nicolhetti-Archives/resolve/main/Pack%20de%20Librerias%20BPG/OpenAL/oalinst.exe" },
                 { "PhysX System Software 9.16.0318", "https://huggingface.co/spaces/Nicolhetti/Nicolhetti-Archives/resolve/main/Pack%20de%20Librerias%20BPG/PhysX%20System%20Software%209.16.0318/PhysX-9.16.0318-SystemSoftware.exe" }
             };
+            libraryDescriptions = new Dictionary<string, string>
+            {
+                { "DirectX (WEB)", "DirectX es una colección de interfaces de programación de aplicaciones (APIs) desarrollada por Microsoft para manejar tareas relacionadas con multimedia, especialmente juegos y videos. Incluye bibliotecas para gráficos 2D y 3D, procesamiento de audio, y entrada/salida de dispositivos. Es esencial para que muchos juegos funcionen correctamente en sistemas Windows." },
+                { "Microsoft Visual C++ Redistributable 2005 (x86)", "Microsoft Visual C++ Redistributable es un conjunto de bibliotecas en tiempo de ejecución necesarias para ejecutar aplicaciones desarrolladas con Microsoft Visual C++. Estas bibliotecas incluyen rutinas de uso común que muchas aplicaciones y juegos requieren para funcionar, por lo que su instalación es crucial para evitar errores de ejecución." },
+                { "Microsoft Visual C++ Redistributable 2005 (x64)", "Microsoft Visual C++ Redistributable es un conjunto de bibliotecas en tiempo de ejecución necesarias para ejecutar aplicaciones desarrolladas con Microsoft Visual C++. Estas bibliotecas incluyen rutinas de uso común que muchas aplicaciones y juegos requieren para funcionar, por lo que su instalación es crucial para evitar errores de ejecución." },
+                { "Microsoft Visual C++ Redistributable 2008 (x86)", "Microsoft Visual C++ Redistributable es un conjunto de bibliotecas en tiempo de ejecución necesarias para ejecutar aplicaciones desarrolladas con Microsoft Visual C++. Estas bibliotecas incluyen rutinas de uso común que muchas aplicaciones y juegos requieren para funcionar, por lo que su instalación es crucial para evitar errores de ejecución." },
+                { "Microsoft Visual C++ Redistributable 2008 (x64)", "Microsoft Visual C++ Redistributable es un conjunto de bibliotecas en tiempo de ejecución necesarias para ejecutar aplicaciones desarrolladas con Microsoft Visual C++. Estas bibliotecas incluyen rutinas de uso común que muchas aplicaciones y juegos requieren para funcionar, por lo que su instalación es crucial para evitar errores de ejecución." },
+                { "Microsoft Visual C++ Redistributable 2010 (x86)", "Microsoft Visual C++ Redistributable es un conjunto de bibliotecas en tiempo de ejecución necesarias para ejecutar aplicaciones desarrolladas con Microsoft Visual C++. Estas bibliotecas incluyen rutinas de uso común que muchas aplicaciones y juegos requieren para funcionar, por lo que su instalación es crucial para evitar errores de ejecución." },
+                { "Microsoft Visual C++ Redistributable 2010 (x64)", "Microsoft Visual C++ Redistributable es un conjunto de bibliotecas en tiempo de ejecución necesarias para ejecutar aplicaciones desarrolladas con Microsoft Visual C++. Estas bibliotecas incluyen rutinas de uso común que muchas aplicaciones y juegos requieren para funcionar, por lo que su instalación es crucial para evitar errores de ejecución." },
+                { "Microsoft Visual C++ Redistributable 2012 (x86)", "Microsoft Visual C++ Redistributable es un conjunto de bibliotecas en tiempo de ejecución necesarias para ejecutar aplicaciones desarrolladas con Microsoft Visual C++. Estas bibliotecas incluyen rutinas de uso común que muchas aplicaciones y juegos requieren para funcionar, por lo que su instalación es crucial para evitar errores de ejecución." },
+                { "Microsoft Visual C++ Redistributable 2012 (x64)", "Microsoft Visual C++ Redistributable es un conjunto de bibliotecas en tiempo de ejecución necesarias para ejecutar aplicaciones desarrolladas con Microsoft Visual C++. Estas bibliotecas incluyen rutinas de uso común que muchas aplicaciones y juegos requieren para funcionar, por lo que su instalación es crucial para evitar errores de ejecución." },
+                { "Microsoft Visual C++ Redistributable 2013 (x86)", "Microsoft Visual C++ Redistributable es un conjunto de bibliotecas en tiempo de ejecución necesarias para ejecutar aplicaciones desarrolladas con Microsoft Visual C++. Estas bibliotecas incluyen rutinas de uso común que muchas aplicaciones y juegos requieren para funcionar, por lo que su instalación es crucial para evitar errores de ejecución." },
+                { "Microsoft Visual C++ Redistributable 2013 (x64)", "Microsoft Visual C++ Redistributable es un conjunto de bibliotecas en tiempo de ejecución necesarias para ejecutar aplicaciones desarrolladas con Microsoft Visual C++. Estas bibliotecas incluyen rutinas de uso común que muchas aplicaciones y juegos requieren para funcionar, por lo que su instalación es crucial para evitar errores de ejecución." },
+                { "Microsoft Visual C++ Redistributable 2015, 2017, 2019 y 2022 (x86)", "Microsoft Visual C++ Redistributable es un conjunto de bibliotecas en tiempo de ejecución necesarias para ejecutar aplicaciones desarrolladas con Microsoft Visual C++. Estas bibliotecas incluyen rutinas de uso común que muchas aplicaciones y juegos requieren para funcionar, por lo que su instalación es crucial para evitar errores de ejecución." },
+                { "Microsoft Visual C++ Redistributable 2015, 2017, 2019 y 2022 (x64)", "Microsoft Visual C++ Redistributable es un conjunto de bibliotecas en tiempo de ejecución necesarias para ejecutar aplicaciones desarrolladas con Microsoft Visual C++. Estas bibliotecas incluyen rutinas de uso común que muchas aplicaciones y juegos requieren para funcionar, por lo que su instalación es crucial para evitar errores de ejecución." },
+                { "Microsoft XNA Framework Redistributable 4.0", "Microsoft XNA Framework Redistributable es un conjunto de herramientas con un entorno de ejecución administrado que facilita el desarrollo de videojuegos para PC, Xbox y Windows Phone. Proporciona APIs para el manejo de gráficos, sonidos, entrada de usuario, y más, simplificando el desarrollo de juegos en plataformas Microsoft." },
+                { ".NET Framework 3.5 SP1", "NET Framework es una plataforma de desarrollo de software creada por Microsoft que proporciona un entorno controlado en el que las aplicaciones pueden ser desarrolladas y ejecutadas. Incluye una gran biblioteca de clases y soporte para varios lenguajes de programación. Muchos juegos y aplicaciones requieren .NET Framework para funcionar correctamente." },
+                { ".NET Framework 4.6.2 (WEB)", "NET Framework es una plataforma de desarrollo de software creada por Microsoft que proporciona un entorno controlado en el que las aplicaciones pueden ser desarrolladas y ejecutadas. Incluye una gran biblioteca de clases y soporte para varios lenguajes de programación. Muchos juegos y aplicaciones requieren .NET Framework para funcionar correctamente." },
+                { ".NET Framework 4.7.1 (WEB)", "NET Framework es una plataforma de desarrollo de software creada por Microsoft que proporciona un entorno controlado en el que las aplicaciones pueden ser desarrolladas y ejecutadas. Incluye una gran biblioteca de clases y soporte para varios lenguajes de programación. Muchos juegos y aplicaciones requieren .NET Framework para funcionar correctamente." },
+                { ".NET Framework 4.7.2 (WEB)", "NET Framework es una plataforma de desarrollo de software creada por Microsoft que proporciona un entorno controlado en el que las aplicaciones pueden ser desarrolladas y ejecutadas. Incluye una gran biblioteca de clases y soporte para varios lenguajes de programación. Muchos juegos y aplicaciones requieren .NET Framework para funcionar correctamente." },
+                { ".NET Framework 4.7 (WEB)", "NET Framework es una plataforma de desarrollo de software creada por Microsoft que proporciona un entorno controlado en el que las aplicaciones pueden ser desarrolladas y ejecutadas. Incluye una gran biblioteca de clases y soporte para varios lenguajes de programación. Muchos juegos y aplicaciones requieren .NET Framework para funcionar correctamente." },
+                { ".NET Framework 4.8.1 (WEB)", "NET Framework es una plataforma de desarrollo de software creada por Microsoft que proporciona un entorno controlado en el que las aplicaciones pueden ser desarrolladas y ejecutadas. Incluye una gran biblioteca de clases y soporte para varios lenguajes de programación. Muchos juegos y aplicaciones requieren .NET Framework para funcionar correctamente." },
+                { ".NET Framework 4.8 (WEB)", "NET Framework es una plataforma de desarrollo de software creada por Microsoft que proporciona un entorno controlado en el que las aplicaciones pueden ser desarrolladas y ejecutadas. Incluye una gran biblioteca de clases y soporte para varios lenguajes de programación. Muchos juegos y aplicaciones requieren .NET Framework para funcionar correctamente." },
+                { "OpenAL", "OpenAL (Open Audio Library) es una API multiplataforma diseñada para proporcionar una interfaz estándar para la reproducción de audio tridimensional. Es utilizada por muchos juegos para gestionar el sonido envolvente, efectos de sonido y posicionamiento de audio en un espacio 3D." },
+                { "PhysX System Software 9.16.0318", "PhysX System Software es un motor de física desarrollado por NVIDIA que proporciona simulaciones realistas de dinámicas físicas en videojuegos. PhysX se encarga de calcular efectos como colisiones, explosiones, y movimientos de objetos, permitiendo una experiencia de juego más inmersiva." }
+            };
             InitializeCheckBoxes();
         }
 
@@ -60,7 +87,7 @@ namespace NittiLibraryInstaller
                 string url = libraries[library];
                 await DownloadAndInstallLibrary(library, url);
             }
-            MessageBox.Show("Todas las librerías seleccionadas se han instalado correctamente!", "Instalación completa", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("¡Todas las librerías seleccionadas se han instalado correctamente!", "Instalación completa", MessageBoxButtons.OK, MessageBoxIcon.Information);
             buttonInstall.Enabled = true;
         }
 
@@ -83,9 +110,39 @@ namespace NittiLibraryInstaller
             }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void checkedListBoxLibraries_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (checkedListBoxLibraries.SelectedItem != null)
+            {
+                string selectedLibrary = checkedListBoxLibraries.SelectedItem.ToString();
+                labelInfo.Text = libraryDescriptions[selectedLibrary];
 
+                if (!panelInfo.Visible)
+                {
+                    this.ClientSize = new System.Drawing.Size(567, 300);
+                    panelInfo.Visible = true;
+                }
+            }
+        }
+
+        private void buttonDeleteTempFiles_Click(object sender, EventArgs e)
+        {
+            string tempPath = Path.GetTempPath();
+            DirectoryInfo tempDir = new DirectoryInfo(tempPath);
+
+            foreach (FileInfo file in tempDir.GetFiles())
+            {
+                try
+                {
+                    file.Delete();
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine($"No se pudo borrar el archivo {file.Name}: {ex.Message}");
+                }
+            }
+
+            MessageBox.Show("Archivos temporales eliminados (excepto aquellos que no se pudieron eliminar).", "Operación completa", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
