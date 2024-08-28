@@ -122,7 +122,7 @@
     <value>12, 12</value>
   </data>
   <data name="checkedListBoxLibraries.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 139</value>
+    <value>300, 154</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="checkedListBoxLibraries.TabIndex" type="System.Int32, mscorlib">
@@ -141,7 +141,7 @@
     <value>4</value>
   </data>
   <data name="buttonInstall.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 157</value>
+    <value>12, 175</value>
   </data>
   <data name="buttonInstall.Size" type="System.Drawing.Size, System.Drawing">
     <value>300, 23</value>
@@ -165,7 +165,7 @@
     <value>3</value>
   </data>
   <data name="progressBar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 186</value>
+    <value>12, 206</value>
   </data>
   <data name="progressBar1.Size" type="System.Drawing.Size, System.Drawing">
     <value>300, 23</value>
@@ -189,7 +189,7 @@
     <value>True</value>
   </data>
   <data name="labelStatus.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 212</value>
+    <value>12, 235</value>
   </data>
   <data name="labelStatus.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 13</value>
@@ -214,42 +214,6 @@
   </data>
   <data name="panelInfo.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="&gt;&gt;labelInfo.Name" xml:space="preserve">
-    <value>labelInfo</value>
-  </data>
-  <data name="&gt;&gt;labelInfo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelInfo.Parent" xml:space="preserve">
-    <value>panelInfo</value>
-  </data>
-  <data name="&gt;&gt;labelInfo.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panelInfo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>318, 12</value>
-  </data>
-  <data name="panelInfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>221, 198</value>
-  </data>
-  <data name="panelInfo.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="panelInfo.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;panelInfo.Name" xml:space="preserve">
-    <value>panelInfo</value>
-  </data>
-  <data name="&gt;&gt;panelInfo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelInfo.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelInfo.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="labelInfo.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -281,8 +245,32 @@
   <data name="&gt;&gt;labelInfo.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="panelInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>318, 12</value>
+  </data>
+  <data name="panelInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 154</value>
+  </data>
+  <data name="panelInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="panelInfo.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;panelInfo.Name" xml:space="preserve">
+    <value>panelInfo</value>
+  </data>
+  <data name="&gt;&gt;panelInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelInfo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelInfo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="buttonDeleteTempFiles.Location" type="System.Drawing.Point, System.Drawing">
-    <value>328, 226</value>
+    <value>324, 175</value>
   </data>
   <data name="buttonDeleteTempFiles.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 23</value>
