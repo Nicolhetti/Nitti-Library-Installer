@@ -1,57 +1,63 @@
 # Nitti Library Installer
 
-**Nitti Library Installer** es una herramienta sencilla y moderna diseñada para facilitar la instalación de librerías esenciales (.exe y .msi) necesarias para el correcto funcionamiento de videojuegos en sistemas Windows. Este programa permite a los usuarios seleccionar y descargar automáticamente las librerías, instalándolas una por una de manera rápida y eficiente.
+Nitti Library Installer es una herramienta sencilla y moderna diseñada para facilitar la instalación de todas las librerías necesarias para el correcto funcionamiento de videojuegos en sistemas Windows. Con una interfaz amigable, permite a los usuarios seleccionar las librerías que desean instalar, descargarlas e instalarlas de manera automática.
 
 ## Características
 
-- **Interfaz amigable**: Una interfaz moderna y fácil de usar, ideal para usuarios sin experiencia técnica.
-- **Selección de librerías**: Permite seleccionar las librerías necesarias de una lista predefinida.
-- **Descarga automática**: Las librerías seleccionadas se descargan desde [mi Space en Hugging Face](https://huggingface.co/spaces/Nicolhetti/Nicolhetti-Archives/tree/main/Pack%20de%20Librerias%20BPG) directamente en la carpeta de archivos temporales.
-- **Instalación automatizada**: Las librerías se instalan una por una tras la descarga, proporcionando una experiencia fluida.
+- **Interfaz moderna y fácil de usar:** Selecciona las librerías necesarias para instalar en tu sistema con unos pocos clics.
+- **Instalación automática:** Descarga e instala las librerías seleccionadas desde [mi Space en Hugging Face](https://huggingface.co/spaces/Nicolhetti-Projects/Nicolhetti-Archives/tree/main/Pack%20de%20Librerias%20BPG).
+- **Información detallada:** Haz clic en una librería para obtener una descripción detallada de su propósito y función.
+- **Eliminación de archivos temporales:** Borra los archivos temporales generados durante la instalación con un solo clic, omitiendo aquellos que no se pueden eliminar.
 
 ## Requisitos del Sistema
 
 - Windows 7 o superior
-- .NET Framework 4.7.2 o superior
-
-## Instalación
-
-Para instalar **Nitti Library Installer**, sigue estos pasos:
-
-1. Clona el repositorio o descarga los archivos desde [GitHub](https://github.com/Nicolhetti/Nitti-Library-Installer):
-   ```sh
-   git clone https://github.com/Nicolhetti/Nitti-Library-Installer.git
-   ```
-2. Abre el proyecto en Visual Studio (2019 o superior) o en tu entorno de desarrollo preferido.
-3. Compila el proyecto utilizando la configuración `Release`.
-4. Ejecuta el archivo `Nitti Library Installer.exe` generado en la carpeta `bin/Release`.
+- .NET Framework [4.7.2](https://huggingface.co/spaces/Nicolhetti-Projects/Nicolhetti-Archives/resolve/main/Pack%20de%20Librerias%20BPG/NET%20Framework/.NET%20Framework%204.7.2/ndp472-kb4054531-web.exe?download=true) o superior
 
 ## Uso
 
-1. Al abrir el programa, verás una lista de librerías disponibles.
-2. Marca las casillas de las librerías que deseas instalar.
-3. Haz clic en el botón "Instalar Librerías Seleccionadas".
-4. El programa descargará e instalará automáticamente las librerías seleccionadas.
-5. Una vez completada la instalación, recibirás un mensaje de confirmación.
+1. Descarga la última versión desde la sección de [Releases](https://github.com/Nicolhetti/Nitti-Library-Installer/releases/tag/v1.1.1).
+2. Abre Nitti Library Installer.
+3. Marca las casillas de las librerías que deseas instalar.
+4. Haz clic en "Instalar Librerías Seleccionadas" para iniciar el proceso de descarga e instalación.
+5. Si deseas eliminar los archivos temporales generados durante la instalación, haz clic en el botón "Eliminar archivos temporales".
+
+## Changelog
+
+### [v1.1.1](https://github.com/Nicolhetti/Nitti-Library-Installer/releases/tag/v1.1.1) - Actualización mínima 2024-08-28
+- **Mejoras:** Interfaz reordenada.
+- **Corrección de errores:** Enlaces de descarga de librerías actualizados.
+
+### [v1.1.0](https://github.com/Nicolhetti/Nitti-Library-Installer/releases/tag/v1.1.0) - Actualización 2024-08-27
+- **Nuevas Funcionalidades:**
+  - Cuadro de información dinámico para cada librería.
+  - Botón para eliminar archivos temporales.
+- **Mejoras:** Interfaz más intuitiva y optimización del código.
+- **Corrección de errores:** Visualización completa del texto en el cuadro de información.
 
 ## Contribuciones
 
-Las contribuciones son bienvenidas. Si tienes ideas para mejorar el programa o encuentras algún error, por favor sigue estos pasos:
+Este proyecto es de código abierto, y las contribuciones son bienvenidas. Si deseas contribuir, por favor, sigue estos pasos:
 
-1. Haz un fork de este repositorio.
-2. Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
-3. Realiza tus cambios y haz commit (`git commit -m 'Agregar nueva funcionalidad'`).
-4. Sube tus cambios (`git push origin feature/nueva-funcionalidad`).
-5. Abre un Pull Request en GitHub.
+1. Haz un fork del repositorio.
+2. Crea una nueva rama con tu funcionalidad o corrección (`git checkout -b feature/nueva-funcionalidad`).
+3. Realiza tus cambios y haz un commit (`git commit -am 'Agregada nueva funcionalidad'`).
+4. Envía tu pull request.
 
 ## Licencia
 
-Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+Este proyecto está bajo la [Licencia MIT](https://github.com/Nicolhetti/Nitti-Library-Installer/blob/master/LICENSE).
+
+## Contacto
+
+Para preguntas o sugerencias, no dudes en abrir un issue en el repositorio o contactarme directamente en Discord `@nicolhetti`.
 
 ## Créditos
 
 Creado por [Nicolhetti](https://github.com/Nicolhetti).
 
+Tester [aleferreiro7x](https://github.com/aleferreiro7x)
+
 ---
 
-¡Gracias por usar Nitti Library Installer!
+*¡Gracias por usar Nitti Library Installer!*
